@@ -1,0 +1,65 @@
+.splash-container {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  place-items: center;
+}
+.splash-container .splash {
+  margin: auto;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #7E64FF;
+  -webkit-animation: shrink 500ms 1500ms;
+          animation: shrink 500ms 1500ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+.splash-container .logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  -webkit-animation: fade 3000ms 1800ms linear infinite;
+          animation: fade 3000ms 1800ms linear infinite;
+}
+
+@-webkit-keyframes shrink {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 0;
+  }
+}
+
+@keyframes shrink {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 0;
+  }
+}
+@-webkit-keyframes fade {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+}
+@keyframes fade {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+}/*# sourceMappingURL=Splash.css.map */
